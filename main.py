@@ -18,7 +18,7 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 LATEST_RELEASE = {
     "versionCode": 2,                           # Increment this for new updates
     "versionName": "1.1.0",
-    "apkUrl": "http://127.0.0.1:8000/static/app-release.apk"  # Swap with your server's IP
+    "apkUrl": "https://docs.google.com/uc?export=download&id=1Ch_HP1K4j92vUHnTCs97z6_EoS5KFlwU"  # Swap with your server's IP
 }
 
 # 3. Request Data Structure Validation
