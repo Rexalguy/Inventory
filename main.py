@@ -5,9 +5,13 @@ from pydantic import BaseModel
 app = FastAPI(title="Company Private OTA Server")
 
 # 1. Static File Mounting
-# This exposes everything in the 'static' folder under the /static URL path.
-# Example: http://YOUR_SERVER_IP:8000/static/app-release.apk
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# 2. Check if the directory exists; if not, create it dynamically
+STATIC_DIR = "static"
+if not os.path.exists(STATIC_DIR):
+    os.makedirs(STATIC_DIR)
+
+# 3. Mount the directory safely now that we know it exists
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 # 2. In-Memory Source of Truth
 # When you have a new update, you will manually increment these numbers here.
