@@ -1,0 +1,18 @@
+# --- Python Caching and Compiled Bytecode ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.bytecode/
+
+
+.venv/
+venv/
+ENV/
+env/
+dist/
+
+stored_apks/
+static/
+.static/
