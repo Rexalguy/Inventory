@@ -20,7 +20,7 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 LATEST_RELEASE = {
     "versionCode": 2,                           # Increment this for new updates
     "versionName": "1.1.0",
-    "apkUrl": "https://docs.google.com/uc?export=download&id=1Ch_HP1K4j92vUHnTCs97z6_EoS5KFlwU"  # Swap with your server's IP
+    "apkUrl": "https://github.com/Rexalguy/Inventory/releases/download/v1.1.0/app-release.apk"  # Swap with your server's IP
 }
 
 # 3. Request Data Structure Validation
