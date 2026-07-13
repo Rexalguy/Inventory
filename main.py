@@ -13,7 +13,7 @@ app = FastAPI(title="Company Private OTA Server")
 LATEST_RELEASE = {
     "versionCode": 3,                           # Increment this for new updates
     "versionName": "1.1.0",
-    "apkUrl": "https://github.com/Rexalguy/Inventory/releases/download/v1.1.0/app-release.apk"  # Swap with your server's IP
+    "apkUrl": "https://github.com/Rexalguy/Inventory/releases/download/v1.1.0/app-debug.apk"  # Swap with your server's IP
 }
 
 # 3. Request Data Structure Validation
